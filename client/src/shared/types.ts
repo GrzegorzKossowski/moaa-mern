@@ -4,3 +4,11 @@ export type JsonPlaceholderPostType = {
     title: string;
     body: string;
 };
+
+export type JsonPlaceholderCommentType = {
+    postId: number;
+    id: number;
+    name: string;
+    email: string;
+    body: string;
+};
