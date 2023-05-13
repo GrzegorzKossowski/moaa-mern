@@ -1,11 +1,11 @@
-import React from 'react';
 import { useQuery } from 'react-query';
-import { getJsonPlaceholderPostsApi } from './jsonPlaceholderApi';
+import { getPostsJPApi } from '../jsonPlaceholderPostsApi';
+import { QueryKeys } from '../../../shared/queryKeys';
 
-const useJsonPlaceholderGetPosts = () => {
+const useGetPostsJsonPlaceholder = () => {
     const { isLoading, error, data } = useQuery(
-        'someKey',
-        getJsonPlaceholderPostsApi,
+        QueryKeys.GET_POSTS_JSON_PLACEHOLDER,
+        getPostsJPApi,
         {
             onSuccess: () => {
                 console.log('success');
@@ -18,4 +18,4 @@ const useJsonPlaceholderGetPosts = () => {
     return { isLoading, error, data };
 };
 
-export default useJsonPlaceholderGetPosts;
+export default useGetPostsJsonPlaceholder;
