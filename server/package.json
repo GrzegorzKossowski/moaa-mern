@@ -1,0 +1,27 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Node.js backend for MOAA project",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "NODE_ENV=production nodemon server",
+        "dev": "NODE_ENV=development nodemon server"
+    },
+    "keywords": [],
+    "author": "Grzegorz Kossowski",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "chalk": "^5.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.0",
+        "nodemon": "^2.0.22",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0"
+    }
+}

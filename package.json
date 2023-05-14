@@ -1,0 +1,18 @@
+{
+    "name": "moaa-mern",
+    "version": "1.0.0",
+    "description": "Client tech stack",
+    "main": "index.js",
+    "scripts": {
+        "server": "NODE_ENV=development nodemon server.js --prefix server",
+        "client": "npm run start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^8.0.1",
+        "nodemon": "^2.0.22"
+    }
+}
