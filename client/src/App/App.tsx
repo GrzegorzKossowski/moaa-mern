@@ -1,17 +1,13 @@
+import useGetTestsNodeJs from '../api/testNodeJsApi/hooks/useGetTestsNodeJs';
+import { getTestsJPApi } from '../api/testNodeJsApi/testNodeJsApi';
+import TestsNodeJs from '../components/TestNodeJs/TestsNodeJs';
 import './App.css';
-import JsonPlaceholderPosts from '../components/JsonPlaceholder/JsonPlaceholderPosts/JsonPlaceholderPosts';
-import JsonPlaceholderPostId from '../components/JsonPlaceholder/JsonPlaceholderPosts/JsonPlaceholderPostId';
-import JsonPlaceholderCreatePost from '../components/JsonPlaceholder/JsonPlaceholderPosts/JsonPlaceholderCreatePost';
-import JsonPlaceholderUpdatePost from '../components/JsonPlaceholder/JsonPlaceholderPosts/JsonPlaceholderUpdatePost';
-import JsonPlaceholderDeletePost from '../components/JsonPlaceholder/JsonPlaceholderPosts/JsonPlaceholderDeletePost';
+import { useEffect } from 'react';
 
 function App() {
     return (
         <>
-            {/* <JsonPlaceholderPostId id={1}/> */}
-            {/* <JsonPlaceholderCreatePost /> */}
-            {/* <JsonPlaceholderUpdatePost /> */}
-            <JsonPlaceholderDeletePost/>
+            <TestsNodeJs />
         </>
     );
 }
