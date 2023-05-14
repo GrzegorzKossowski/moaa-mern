@@ -5,6 +5,7 @@ import {
     getPostByIdJPApiMopck,
     createPostJPApiMock,
     updatePostJPApiMock,
+    deletePostJPApiMock,
 } from './mocks/jsonPlaceholderPostsApiMock';
 import { JsonPlaceholderPostType } from '../../shared/types';
 
@@ -44,6 +45,16 @@ export const updatePostJPApi = (newPost: JsonPlaceholderPostType) => {
         ? updatePostJPApiMock()
         : axios
               .put(`https://jsonplaceholder.typicode.com/posts/${id}`, newPost)
+              .then(response => {
+                  return response.data;
+              });
+};
+
+export const deletePostByIdJPApi = (id: number) => {
+    return useApiMocks
+        ? deletePostJPApiMock()
+        : axios
+              .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
               .then(response => {
                   return response.data;
               });

@@ -1,13 +1,12 @@
-# moaa-mern
-
-Mother of all applications - MERN stack
+# Mother of all applications - MERN stack
 
 Client tech stack
 
 1. react
 2. typescript
 3. axios
-4. ...
+4. react-query
+5. ...
 
 Server stack
 
