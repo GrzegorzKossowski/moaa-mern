@@ -12,3 +12,11 @@ export type JsonPlaceholderCommentType = {
     email: string;
     body: string;
 };
+
+export interface User {
+    email: string;
+    firstName?: string;
+    lastName?: string;
+    password?: string;
+    token?: string;
+}

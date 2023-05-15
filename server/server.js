@@ -26,6 +26,8 @@ app.use(express.json())
 // example:
 import testRoutes from './routes/test.route.js'
 app.use('/api/v1/test', testRoutes)
+import userRoutes from './routes/user.route.js'
+app.use('/api/v1/users', userRoutes)
 // ... others routes
 
 // use error handler at the end of actions
