@@ -1,15 +1,19 @@
-import useGetTestsNodeJs from '../api/testNodeJsApi/hooks/useGetTestsNodeJs';
-import { getTestsJPApi } from '../api/testNodeJsApi/testNodeJsApi';
-import LoginForm from '../components/LoginForm/LoginForm';
-import TestsNodeJs from '../components/TestNodeJs/TestsNodeJs';
+import { Link, Outlet } from 'react-router-dom';
 import './App.css';
-import { useEffect } from 'react';
+import Header from '../components/Header/Header';
 
 function App() {
     return (
         <>
-            {/* <TestsNodeJs /> */}
-            <LoginForm />
+            <div>
+                <Header />
+            </div>
+            <div>
+                <Outlet />
+            </div>
+            <div>
+                <Link to={'/error'}>error</Link>
+            </div>
         </>
     );
 }
