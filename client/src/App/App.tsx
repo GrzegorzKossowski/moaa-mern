@@ -2,20 +2,17 @@ import { Link, Outlet } from 'react-router-dom';
 import './App.css';
 import Header from '../components/Header/Header';
 
+import styled from 'styled-components'
+
 function App() {
     return (
-        <>
-            <div>
-                <Header />
-            </div>
-            <div>
-                <Outlet />
-            </div>
-            <div>
-                <Link to={'/error'}>error</Link>
-            </div>
-        </>
+        <AppStyled>
+            <Header />
+            <Outlet />
+        </AppStyled>
     );
 }
+
+const AppStyled = styled.div``
 
 export default App;
