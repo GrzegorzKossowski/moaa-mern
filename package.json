@@ -1,11 +1,17 @@
 {
-  "name": "moaa-mern",
-  "version": "1.0.0",
-  "description": "Mother Of All Applications",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "moaa-mern",
+    "version": "1.0.0",
+    "description": "Mother Of All Applications",
+    "main": "index.js",
+    "scripts": {
+        "server": "npm run dev --prefix server",
+        "client": "npm run dev --prefix webclient",
+        "native": "npm run dev --prefix native",
+        "start": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
 }
