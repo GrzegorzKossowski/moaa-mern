@@ -21,6 +21,7 @@ import hpp from 'hpp'
 // others
 import { errorHandler, notFound } from './middleware/error.middleware.js'
 // import { connectDB } from './config/db.js'
+import { connectDB } from './mongo/db.js'
 
 dotenv.config()
 
@@ -54,7 +55,7 @@ app.use(hpp())
 // app.use(xss())
 
 // conndect to MongoDB
-// connectDB()
+connectDB()
 
 // create own __dirname (linux mint? walk-around)
 const __filename = fileURLToPath(import.meta.url)
@@ -71,6 +72,10 @@ app.get(['/', '/api', `/api/${VERSION}`], (req, res, next) => {
 })
 import testRoutes from './routes/test.routes.js'
 app.use(`/api/${VERSION}/tests`, testRoutes)
+import userRoutes from './routes/user.routes.js'
+app.use(`/api/${VERSION}/users`, userRoutes)
+import productRoutes from './routes/product.routes.js'
+app.use(`/api/${VERSION}/products`, productRoutes)
 
 // use error handler at the end of actions
 app.use(notFound)
@@ -80,7 +85,7 @@ app.use(errorHandler)
 const PORT = process.env.PORT || 5000
 
 // run server
-const server = app.listen(PORT, () => console.log(`Server running on port ${chalk.yellow(process.env.PORT)} in ${chalk.green(process.env.NODE_ENV)} mode\nhttp://localhost:${PORT}/api/${VERSION}/tests`))
+const server = app.listen(PORT, () => console.log(`Server running on port ${chalk.yellow(process.env.PORT)} in ${chalk.green(process.env.NODE_ENV)} mode\nhttp://localhost:${PORT}/api/${VERSION}/users`))
 
 // if sth. goes wrong handle unhandled promise rejection
 process.on('unhandledRejection', (err, promise) => {
