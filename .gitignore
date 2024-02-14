@@ -43,3 +43,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# local mongo DB
+mongoDB/data/**

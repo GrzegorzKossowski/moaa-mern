@@ -1,0 +1,123 @@
+export const productMockData = {
+    data: [
+        {
+            id: '65cbc6ae913f6976fa79cd08',
+            user: '65ca0845fc13ae640355bb0d',
+            name: 'Two-Lane Blacktop',
+            brand: 'Nolan Group',
+            countInStock: 63,
+            category: 'Curb & Gutter',
+            description: 'Suspendisse accumsan tortor quis turpis.',
+            images: ['http://dummyimage.com/132x100.png/dddddd/000000'],
+            numReviews: 28,
+            price: 949.35,
+            productIsNew: false,
+            rating: 0.41,
+            reviews: [
+                {
+                    name: 'Dorrie',
+                    comment:
+                        'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.',
+                    rating: 5,
+                    user: '65ca0845fc13ae640355bb0d',
+                    id: '65cbc6ae913f6976fa79cd09',
+                    createdAt: '2024-02-13T19:44:46.803Z',
+                    updatedAt: '2024-02-13T19:44:46.803Z',
+                },
+            ],
+            subtitle: 'Business-focused dedicated budgetary management',
+            createdAt: '2024-02-13T19:44:46.803Z',
+            updatedAt: '2024-02-13T19:44:46.803Z',
+        },
+        {
+            id: '65cbc6ae913f6976fa79cd0a',
+            user: '65ca0845fc13ae640355bb0d',
+            name: 'Wonderful World',
+            brand: 'Mueller, Feest and Herzog',
+            countInStock: 39,
+            category: 'Site Furnishings',
+            description:
+                'Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
+            images: ['http://dummyimage.com/139x100.png/dddddd/000000'],
+            numReviews: 13,
+            price: null,
+            productIsNew: null,
+            rating: 1.51,
+            reviews: [
+                {
+                    name: 'Modesta',
+                    comment:
+                        'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.',
+                    rating: 3,
+                    user: '65ca0845fc13ae640355bb0e',
+                    id: '65cbc6ae913f6976fa79cd0b',
+                    createdAt: '2024-02-13T19:44:46.804Z',
+                    updatedAt: '2024-02-13T19:44:46.804Z',
+                },
+                {
+                    name: 'Merline',
+                    comment:
+                        'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.',
+                    rating: 2,
+                    user: '65ca0845fc13ae640355bb0f',
+                    id: '65cbc6ae913f6976fa79cd0c',
+                    createdAt: '2024-02-13T19:44:46.804Z',
+                    updatedAt: '2024-02-13T19:44:46.804Z',
+                },
+            ],
+            subtitle: 'Mandatory hybrid projection',
+            createdAt: '2024-02-13T19:44:46.804Z',
+            updatedAt: '2024-02-13T19:44:46.804Z',
+        },
+        {
+            id: '65cbc6ae913f6976fa79cd0d',
+            user: '65ca0845fc13ae640355bb0d',
+            name: 'Last Valley, The',
+            brand: 'Morar, Schultz and West',
+            countInStock: 51,
+            category: 'Wall Protection',
+            description:
+                'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+            images: ['http://dummyimage.com/249x100.png/dddddd/000000'],
+            numReviews: 78,
+            price: null,
+            productIsNew: false,
+            rating: 4.67,
+            reviews: [
+                {
+                    name: 'Merline',
+                    comment:
+                        'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.',
+                    rating: 2,
+                    user: '65ca0845fc13ae640355bb0f',
+                    id: '65cbc6ae913f6976fa79cd0e',
+                    createdAt: '2024-02-13T19:44:46.804Z',
+                    updatedAt: '2024-02-13T19:44:46.804Z',
+                },
+                {
+                    name: 'Andre',
+                    comment:
+                        'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',
+                    rating: 5,
+                    user: '65ca0845fc13ae640355bb10',
+                    id: '65cbc6ae913f6976fa79cd0f',
+                    createdAt: '2024-02-13T19:44:46.804Z',
+                    updatedAt: '2024-02-13T19:44:46.804Z',
+                },
+                {
+                    name: 'Montgomery',
+                    comment:
+                        'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',
+                    rating: 4,
+                    user: '65ca0845fc13ae640355bb11',
+                    id: '65cbc6ae913f6976fa79cd10',
+                    createdAt: '2024-02-13T19:44:46.804Z',
+                    updatedAt: '2024-02-13T19:44:46.804Z',
+                },
+            ],
+            subtitle: 'Quality-focused 4th generation hierarchy',
+            createdAt: '2024-02-13T19:44:46.804Z',
+            updatedAt: '2024-02-13T19:44:46.804Z',
+        },
+    ],
+};
