@@ -85,7 +85,10 @@ app.use(errorHandler)
 const PORT = process.env.PORT || 5000
 
 // run server
-const server = app.listen(PORT, () => console.log(`Server running on port ${chalk.yellow(process.env.PORT)} in ${chalk.green(process.env.NODE_ENV)} mode\nhttp://localhost:${PORT}/api/${VERSION}/users`))
+const server = app.listen(PORT, () => console.log(`
+\tServer running on port ${chalk.yellow.bold(process.env.PORT)} in ${chalk.green(process.env.NODE_ENV)} mode
+\tLocal:\thttp://localhost:${chalk.cyanBright.bold(PORT)}/api/${VERSION}
+`))
 
 // if sth. goes wrong handle unhandled promise rejection
 process.on('unhandledRejection', (err, promise) => {

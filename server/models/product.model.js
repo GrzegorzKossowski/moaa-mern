@@ -12,7 +12,7 @@ const reviewSchema = mongoose.Schema(
     },
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 )
 
@@ -74,5 +74,15 @@ const productSchema = mongoose.Schema({
 }, {
   timestamps: true,
 })
+// adds extra id string from mongo '_id' Object
+const idToString = {
+  virtuals: true,
+  versionKey: false,
+  transform: function (doc, ret) {
+    delete ret._id
+  }
+}
+productSchema.set('toJSON', idToString)
+reviewSchema.set('toJSON', idToString)
 
 export default mongoose.model('Product', productSchema)

@@ -43,4 +43,13 @@ userSchema.pre('save', async function (next) {
   this.password = bcrypt.hash(this.password, salt);
 });
 
+// adds extra id string from mongo '_id' Object
+userSchema.set('toJSON', {
+  virtuals: true,
+  versionKey: false,
+  transform: function (doc, ret) {
+    delete ret._id
+  }
+})
+
 export default mongoose.model('User', userSchema)

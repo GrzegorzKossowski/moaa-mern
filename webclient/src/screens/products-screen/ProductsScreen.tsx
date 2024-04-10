@@ -1,31 +1,29 @@
 import { useEffect } from 'react';
 import { useGetProducts } from '../../api/productsApi/useGetProducts';
-
-import axios from '../../api/axios/axios';
 import { getProductsApi } from '../../api/productsApi/productsApi';
+import axios from '../../api/axios/axios';
 
 const ProductsScreen = () => {
-    const { products, isLoading, error, isError } = useGetProducts();
-    const {data} = products
-
-    console.log(data);
+    const { products, isLoading, isError } = useGetProducts();
 
     // useEffect(() => {
     //     (async () => {
-    //         const {data} = await getProductsApi();
+    //         const { data } = await getProductsApi();
     //         console.log(data);
     //     })();
     // }, []);
 
-    return <div>ProductsScreen
-        <ul>
-            {data && data.map(({brand, name}) => {
-                return <li>
-                    {brand} | {name}
-                </li>
-            })}
-        </ul>
-    </div>;
+    if (isError) return <>Error...</>;
+    if (isLoading) return <>Loading...</>;
+
+    return (
+        <>
+            {products &&
+                products.data.map(props => {
+                    return <>Element</>;
+                })}
+        </>
+    );
 };
 
 export default ProductsScreen;
